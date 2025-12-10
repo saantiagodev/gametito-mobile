@@ -13,20 +13,22 @@ export default function App() {
       Alert.alert('Voce clicou no botao!');
     }
 
-    const logo = require("./assets/logo.png")
+    const logo = require("./assets/gamestito-logo.png");
 
 
   return (
     <View style={styles.container}>
       {/*<Text style={styles.fundo}>LOGO</Text>*/}
-
-          {/*Imagem da logo
-            <Image source={logo} style={{width:150, height:55, marginBottom:20}} /> */}
+            <Image 
+            source={logo} 
+            style={{ width: 180, height: 60, marginBottom: 30 }} 
+            resizeMode="contain" 
+            />
 
         {/*<MeuComponente conteudo="Conteudo 1" />*/}
 
       <View style={{marginBottom:20, marginTop:10}}>
-        <Text style={{fontFamily: 'Poppins',fontSize:25, fontWeight:'bold'}}>Login</Text>
+        <Text style={styles.h1}>Login</Text>
       </View>
 
       <View style={{marginBottom:20}}>
@@ -37,37 +39,6 @@ export default function App() {
 
       <InputSenha/>
 
-      {/*<View style={{width: 250, marginBottom: 10}}>
-        
-        <Text>E-mail:</Text>
-        <TextInput
-          placeholder='Digite seu Email'
-          style={{
-            height: 40, 
-            borderColor: 'gray', 
-            borderWidth: 1, 
-            borderRadius:10, 
-            width: 250,
-            marginBottom: 20, 
-            marginTop: 5, 
-            paddingLeft:15}}
-        />
-
-        <Text>Senha:</Text>
-        <TextInput
-          placeholder='Digite sua Senha'
-          style={{
-            height: 40, 
-            borderColor: 'gray', 
-            borderWidth: 1, 
-            borderRadius:10, 
-            width: 250,
-            marginBottom: 5, 
-            marginTop: 5, 
-            paddingLeft:15,
-          }}
-        />
-      </View>/*}
 
       {/* Botão de Login com Gradiente */}
       <TouchableOpacity onPress={(botao)}>
@@ -97,13 +68,46 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+
+  // Conteiner principal da tela
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#331F4D',
     alignItems: 'center',
     justifyContent: 'center',
   },
+
   fundo: {
     backgroundColor: 'lightblue',
-  }
+  },
+
+  // Título principal
+  h1: {
+    fontFamily: 'Poppins',
+    fontSize: 32, 
+    fontWeight:'bold',
+    color: '#FFFFFF',
+    marginBottom: 10,
+  },
+
+  // Subtítulo
+  h2: {
+
+  },
+
+  // Conteiner de cada Input personalizado
+  inputContainer: {
+
+  },
+
+  // Textos dos Inputs
+  inputText: {
+
+  },
+
+  // Caixa de texto (Input)
+  inputBox: {
+
+  },
+
 });
