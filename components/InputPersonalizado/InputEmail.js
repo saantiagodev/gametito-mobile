@@ -8,6 +8,7 @@ export default function InputEmail({campoEmail}) {
                 placeholder='Digite seu Email'
                 placeholderTextColor= "#6C7278"
                 style={{
+                    fontSize: 13,
                     height: 40,
                     borderColor: "#606AD9",
                     borderWidth: 1,

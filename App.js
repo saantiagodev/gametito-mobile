@@ -81,7 +81,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'lightblue',
   },
 
-  // Título principal
+  // == ESTILOS DOS TEXTOS == //
+  // Login e Cadastro
   h1: {
     fontFamily: 'Poppins',
     fontSize: 32, 
@@ -90,23 +91,69 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
 
-  // Subtítulo
+  // Subtítulo "Digite seu email..."
   h2: {
-
+    fontsize: 13,
   },
 
+
+  // == ESTILOS DOS INPUTS PERSONALIZADOS == //
   // Conteiner de cada Input personalizado
   inputContainer: {
+    width: 250,
+    marginBottom: 10,
+  },
 
+  // Texto acima do Input
+  labelInput: {
+    fontSize: 13,
+    color: '#C4C4C4',
+    fontWeight: 'medium',
+    marginBottom: 10,
   },
 
   // Textos dos Inputs
   inputText: {
-
+    fontSize: 13,
+    fontWeight: 'medium',
+    height: 40,
+    borderColor: "#606AD9",
+    borderWidth: 1,
+    borderRadius:10,
+    marginBottom: 10, 
+    marginTop: 5, 
+    paddingLeft:12
   },
 
   // Caixa de texto (Input)
   inputBox: {
+
+  },
+
+
+  // == ÁREA DO RODAPÉ DO FORMULÁRIO == //
+  // Container (alinhar 'Lembre-se' e 'Esqueci minha senha')
+  rowContainer: {
+
+  },
+
+  // 'Lembre-se de mim'
+  rememberText: {
+
+  },
+
+  // 'Esqueci minha senha'
+  forgotText: {
+
+  },
+
+
+  // == ESTILOS DO BOTÃO == //
+  button: {
+    
+  },
+
+  buttonText: {
 
   },
 
